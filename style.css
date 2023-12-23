@@ -1,0 +1,189 @@
+* {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/pexels-ekam-juneja-14540527.jpg);
+    background-size: cover;
+}
+
+.surya-box {
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    height: 170px;
+    width: 170px;
+    background: url(img/sun.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 50px rgb(240, 138, 5);
+    animation: suriya 90s linear infinite;
+}
+
+@keyframes suriya {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -552px 0;
+    }
+}
+
+
+
+.container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-height: 100vh;
+    margin: 120px -430px;
+    position: relative;
+    transform: rotateX(60deg);
+}
+
+.mercury {
+    height: 300px;
+    width: 300px;
+}
+
+.neptune {
+    padding: 100px;
+    position: absolute;
+    border: 2px solid #fff;
+    margin-left: -100px;
+    border-radius: 50%;
+    animation: earth 30s linear infinite;
+}
+
+
+
+
+
+.uranus,
+.saturn,
+.jupiter,
+.mars,
+.earth,
+.venus,
+.mercury {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 60px;
+    border-radius: 50%;
+    animation: earthsed 30s linear infinite;
+
+
+}
+
+.mercury::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: 37.6%;
+    background: linear-gradient(rgb(148, 102, 102), rgb(15, 15, 15));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.venus::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 62%;
+    background: linear-gradient(rgb(255, 166, 0), rgb(255, 217, 0));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.earth::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 26%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background: url(img/pexels-pixabay-41949.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.mars::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left: 66%;
+    background: linear-gradient(rgb(255, 166, 0), rgb(255, 0, 0));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.jupiter::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 60%;
+    left: 18.5%;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(rgb(172, 134, 64), rgb(128, 128, 128), rgb(10, 10, 10), rgb(230, 226, 226), rgb(172, 134, 64));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.saturn::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 10%;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(rgb(63, 56, 44), rgb(255, 174, 0));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.uranus::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 87%;
+    left: 55%;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    background: linear-gradient(rgb(44, 62, 63), rgb(0, 89, 255));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+.neptune::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 44.5%;
+    left: 96.7%;
+    background: linear-gradient(rgb(53, 44, 63), rgb(47, 0, 255));
+    box-shadow: inset 0 0 2px rgb(0, 0, 0, 1), 0 0 30px#fff;
+}
+
+@keyframes earth {
+    to {
+        transform: rotate(360deg);
+    }
+}
